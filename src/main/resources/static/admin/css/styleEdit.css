@@ -1,0 +1,24 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 50vw;
+    flex-direction: column;
+}
+
+#accionesModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+button:hover{
+    transition: .5s;
+    scale: 1.1;
+    backdrop-filter: brightness(0.9);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#cancelar{
+    background-color: red !important;
+}

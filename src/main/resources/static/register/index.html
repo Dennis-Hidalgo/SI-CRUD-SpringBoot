@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/register/js/app.js"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="../index.html">< Volver al login</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="formulario" method="GET">
+        <h2>REGISTRO</h2>
+        <div>
+            <label><b>Nombre</b>:</label>
+            <input id="nombre" autocomplete="off" type="text" onkeyup="validarCampos()" placeholder="Introduce tu nombre">
+        </div>
+
+        <span id="mensajeNombre"></span>
+
+        <div>
+            <label><b>Contraseña</b>:</label>
+            <section id="sectionContra">
+                <input class="contrasenha" id="contraseña" type="password" onkeyup="validarCampos()" placeholder="Introduce tu contraseña">
+            </section>
+        </div>
+
+        <span id="mensajeContrasenas"></span>
+        <div>
+            <label><b>Repetir contraseña</b>:</label>
+            <section id="sectionContraRepetir">
+                <input class="contrasenha" id="contraseñaRepetir" type="password" onkeyup="validarCampos()" placeholder="Introduce tu contraseña">
+            </section>
+        </div>
+
+        <span id="mensajeError"></span>
+
+        <div>
+            <button type="submit" id="iniciar" onclick="añadirUsuario()" disabled>Registrar usuario</button>
+        </div>
+    </section>
+</main>
+
+</body>
+<script src="/register/js/app.js"></script>
+</html>
